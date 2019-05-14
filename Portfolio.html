@@ -14,14 +14,15 @@
         .navbar {
             margin-bottom: 30px;
         }
+
+        .card {
+            border: none;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
-            </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">About Me</a>
             </li>
@@ -35,20 +36,40 @@
     </nav>
 
     <div class="jumbotron">
-        <!--example jumbotron object-->
         <div class="container">
-            <h1 class="display-5 col-md-12">BRENT MCMANUS</h1>
-            <p>
-                this exercise looks like more work than it actually is, since you can copy and paste a majority of it. you might ask yourself in this regard why there is a gap between the navbar and the jumbotron. this is because the navbar is set to static and not to fixed.
-            </p>
+            <h1 class="display-6 text-center">BRENT MCMANUS</h1>
+            <h4 class="text-center">
+                <em>Computer Science Graduate Student at Portland State University</em>
+            </h4>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <!--example row of columns containing headers, a paragraph and a button-->
+            <div class="card col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title text-center">About Me</h3>
+                    <p>
+                        Brent McManus is a student who fell in love with the field of machine learning and artificial
+                        intelligence the very moment he took his first class.  He attended the University of Oregon for
+                        his undergrad studies.  He studied human physiology with a goal of getting into sports medicine.
+                        He fell in love with CrossFit instead and started his own affiliate gym after after working at a
+                        local globo gym.
+                    </p>
+                </div>
+            </div>
+            <div class="card col-md-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Contact</h3>
+                    <p>brent.mcmanus@me.com</p>
+                    <p>bamcmanus@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
             <div class="col-md-4">
-                <!--<div class="card-header">-->
                 <h2>Facial Recognition</h2>
                 <p>
                     Implemented a machine learning algorithm and computer vision program to detect faces and identify individuals from a live camera.  Written in Python and uses OpenCV.
@@ -84,10 +105,6 @@
                 </p>
             </div>
         </div>
-        <hr />
-        <footer class="container.fluid">
-            <p>some message in the footer</p>
-        </footer>
     </div>
 </body>
 
