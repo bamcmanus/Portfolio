@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -12,66 +12,55 @@
 
     <style type="text/css">
         .navbar {
-            margin-bottom: 30px;
+            margin-bottom: 100px;
         }
 
         .card {
             border: none;
         }
+
+        img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+
+        p, h2 {
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <img class="bg" src="./image2.jpg" />
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
+        <a href="#" class="navbar-brand pull-right">Brent McManus</a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link">About Me</a>
+                <a href="About.html" class="nav-link">About Me</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Projects</a>
+                <a href="Projects.html" class="nav-link active">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Resume</a>
+                <a href="resume.html" class="nav-link">Resume</a>
             </li>
         </ul>
     </nav>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-6 text-center">BRENT MCMANUS</h1>
-            <h4 class="text-center">
-                <em>Computer Science Graduate Student at Portland State University</em>
-            </h4>
-        </div>
-    </div>
-
     <div class="container">
-        <div class="row">
-            <div class="card col-md-8">
-                <div class="card-body">
-                    <h3 class="card-title text-center">About Me</h3>
-                    <p>
-                        Brent McManus is a student who fell in love with the field of machine learning and artificial
-                        intelligence the very moment he took his first class.  He attended the University of Oregon for
-                        his undergrad studies.  He studied human physiology with a goal of getting into sports medicine.
-                        He fell in love with CrossFit instead and started his own affiliate gym after after working at a
-                        local globo gym.
-                    </p>
-                </div>
-            </div>
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <h3 class="card-title text-center">Contact</h3>
-                    <p>brent.mcmanus@me.com</p>
-                    <p>bamcmanus@gmail.com</p>
-                </div>
-            </div>
-        </div>
-
         <div class="row">
 
             <div class="col-md-4">
                 <h2>Facial Recognition</h2>
-                <p>
+                <p color="white">
                     Implemented a machine learning algorithm and computer vision program to detect faces and identify individuals from a live camera.  Written in Python and uses OpenCV.
                 </p>
                 <p>
